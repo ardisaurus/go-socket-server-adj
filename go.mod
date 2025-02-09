@@ -1,6 +1,6 @@
 module go-socket-server
 
-go 1.23.6
+go 1.12.0
 
 require (
 	github.com/doquangtan/socket.io/v4 v4.0.8
