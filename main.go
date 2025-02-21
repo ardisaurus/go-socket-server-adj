@@ -65,7 +65,7 @@ func usingWithGin() {
 	router := gin.Default()
 
 	// Apply CORS middleware to allow frontend (React) to connect
-	router.Use(GinMiddleware("http://localhost:5173, https://teams.dashboard-dev.prospace.io:3000/, https://teams.dashboard-dev.prospace.io/"))
+	router.Use(GinMiddleware("http://localhost:5173, https://teams.dashboard-dev.prospace.io:3000/, https://teams.dashboard-dev.prospace.io/, https://teams.dashboard-staging.prospace.io/, https://teams.dashboard.prospace.io/"))
 
 	// Serve static files from the "./public" directory
 	router.Use(static.Serve("/", static.LocalFile("./public", false)))
